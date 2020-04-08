@@ -3,7 +3,7 @@
 ## Passo a passo
 - **Comece fazendo um clone do seu bare repository** - Vá até seu repositório no github e aperte o botão "Clone or Download" e copie a url. Após isso, abra seu terminal, navegue até a pasta onde deseja fazer o clone e digite o seguinte comando:
 
-> Utilize a url que você copiou
+> Este comando criará um "bare repository" que você utilizará para executar os comandos das próximas etapas. Na prática você irá reconhecê-lo como uma pasta com o final .git, no meu caso foi criada como how-to-fix.git
 
 ```sh
 git clone --bare https://github.com/paulodelia/how-to-fix.git
@@ -63,6 +63,20 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```  
+
+- **Execute o script** - Abra o terminal e navegue até a pasta do seu bare repository, cole o script alterado com as suas informações e pressione enter. Quando o professor finalizar execute este comando:
+
+```sh
+git push --force --tags origin 'refs/heads/*'
+```
+  
+Ao entrar no github e olhar os commits você verá que foram alterados corretamente.
+
+- **Considerações finais**
+    1. O script altera somente os commits que possuem o email preenchido em OLD_EMAIL, portanto se seu repositório tiver commits de mais usuários estes não serão alterados
+    2. Você pode rodar o script quantas vezes quiser
+    3. Se está em um projeto com mais pessoas, avise-os de que este processo está sendo feito. Caso esqueçam de fazer um pull, e depois derem um merge, os commits serão duplicados. Portanto, lembre-se de não dar um push se você não tem o seu repositório local atualizado
+    4. Este script não foi criado por mim, apenas estou fazendo um tutorial em português para ajudar mais pessoas. Link para o github do autor e vídeo original estão logo abaixo. PS: Recomendo muito que confiram o github e canal do Tim Sully e deixem uma estrela e um like
 
 ## Autor do script
 
