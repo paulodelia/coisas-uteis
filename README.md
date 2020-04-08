@@ -2,4 +2,4 @@
 
 ## Sobre o projeto
 
-- Este projeto tem o objetivo de documentar as soluções encontradas para problemas que acabei me deparando ao longo do caminho de aprender e evoluir na programação
+- Este projeto tem o objetivo de documentar as soluções encontradas para resolver problemas que acabei me deparando
