@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git filter-branch --env-filter '
 OLD_EMAIL="your-old-email@example.com"
 CORRECT_NAME="Your Correct Name"
