@@ -63,7 +63,9 @@ fi
 ' --tag-name-filter cat -- --branches --tags
 ```  
 
-- **Execute o script** - Abra o terminal e navegue até a pasta do seu bare repository, cole o script alterado com as suas informações e pressione enter. Quando o professor finalizar execute este comando:
+- **Execute o script** - Abra o terminal e navegue até a pasta do seu bare repository, cole o script alterado com as suas informações e pressione enter
+
+- **Envia suas alterações para o github** - Quando o processo acima finalizar execute este comando:
 
 ```sh
 git push --force --tags origin 'refs/heads/*'
