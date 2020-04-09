@@ -80,14 +80,3 @@ Ao entrar no github e olhar os commits você verá que foram alterados corretame
     1. O script altera somente os commits que possuem o email preenchido em OLD_EMAIL, portanto se seu repositório tiver commits de mais usuários estes não serão alterados
     2. Você pode rodar o script quantas vezes quiser
     3. Se está em um projeto com mais pessoas, avise-os de que este processo está sendo feito. Caso esqueçam de fazer um pull, e depois derem um merge, os commits serão duplicados. Portanto, lembre-se de não dar um push se você não tem o seu repositório local atualizado
-    4. Este script não foi criado por mim, apenas estou fazendo um tutorial em português para ajudar mais pessoas. Link para o github do autor e vídeo original estão logo abaixo. PS: Recomendo muito que confiram o github e canal do Tim Sully e deixem uma estrela e um like
-
-## Autor do script
-
-https://github.com/timsully
-
-## Vídeo original (inglês)
-
-[![How to Change Author on Git Commits on an Entire Repository
-](http://i3.ytimg.com/vi/3LIr70uVZ_Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=3LIr70uVZ_Q&feature=youtu.be)
-
