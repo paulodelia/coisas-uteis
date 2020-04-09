@@ -79,4 +79,4 @@ Ao entrar no github e olhar os commits você verá que foram alterados corretame
 - **Considerações finais**
     1. O script altera somente os commits que possuem o email preenchido em OLD_EMAIL, portanto se seu repositório tiver commits de mais usuários estes não serão alterados
     2. Você pode rodar o script quantas vezes quiser
-    3. Se está em um projeto com mais pessoas, avise-os de que este processo está sendo feito. Caso esqueçam de fazer um pull, e depois derem um merge, os commits serão duplicados. Portanto, lembre-se de não dar um push se você não tem o seu repositório local atualizado
+    3. Se está em um projeto com mais pessoas, avise-os de que este processo está sendo feito. Caso esqueçam de fazer um pull, e depois derem um merge, os commits poderão ser duplicados. Portanto, lembre-se de não dar um push se você não tem o seu repositório local atualizado
