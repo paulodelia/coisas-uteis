@@ -1,5 +1,8 @@
 # Alterar autor do commit de um repositório inteiro
 
+## Demonstração
+[Clique aqui para assistir um vídeo com o funcionamento na prática das instruções dadas abaixo](https://www.youtube.com/watch?v=TjzBUwk4Zag)
+
 ## Passo a passo
 - **Comece fazendo um clone do seu bare repository** - Vá até seu repositório no github e aperte o botão "Clone or Download" e copie a url. Após isso, abra seu terminal, navegue até a pasta onde deseja fazer o clone e digite o seguinte comando:
 
