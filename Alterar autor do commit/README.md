@@ -12,7 +12,6 @@ git clone --bare https://github.com/paulodelia/how-to-fix.git
 - **Descubra o email registrado nos commits que deseja alterar** - Para a próxima etapa é necessário saber o email que está atrelado ao commit. Para descobrir isto, basta navegar até a pasta que você acabou de fazer o clone (a com o final .git) e utilizar o comando:
 
 > Este comando mostrará o histórico de commits feitos e mostrará o usuário e email utilizado em cada commit    
-> No meu caso, o email cadastrado que desejo alterar é youtube@teste.com
 
 ```sh
 git log
@@ -48,7 +47,7 @@ fi
 #!/bin/sh
 
 git filter-branch --env-filter '
-OLD_EMAIL="youtube@teste.com"
+OLD_EMAIL="paulod@gmail.com"
 CORRECT_NAME="paulodelia"
 CORRECT_EMAIL="paulohdelia@gmail.com"
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
