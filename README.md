@@ -1,5 +1,3 @@
 # Coisas úteis
 
-## Sobre o projeto
-
-- Este projeto tem o objetivo de documentar coisas que acabei aprendendo e que podem ser úteis para outras pessoas
+1. Alterar nome e email do autor de vários de commits de uma vez - [Alterar autor do commit](https://github.com/paulodelia/coisas-uteis/tree/master/Alterar%20autor%20do%20commit)
