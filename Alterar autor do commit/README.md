@@ -3,6 +3,13 @@
 ## Demonstração
 [Clique aqui para assistir um vídeo com o funcionamento na prática das instruções dadas abaixo](https://www.youtube.com/watch?v=TjzBUwk4Zag)
 
+## Cuidados antes de seguir o passo a passo
+- Este processo foi testado no **Windows** e no **Mac**, mas acredito que também funciona no **Linux**
+- Se estiver no **Windows**, aconselho que use o **powershell** e em modo de **administrador**
+- O script altera somente os commits que possuem o email preenchido em OLD_EMAIL, portanto se seu repositório tiver commits de mais usuários estes não serão alterados
+- Você pode rodar o script quantas vezes quiser
+- Se está em um projeto com mais pessoas, **avise-os** de que este processo está sendo feito.
+
 ## Passo a passo
 - **Comece fazendo um clone do seu bare repository** - Vá até seu repositório no github e aperte o botão "Clone or Download" e copie a url. Após isso, abra seu terminal, navegue até a pasta onde deseja fazer o clone e digite o seguinte comando:
 
@@ -29,30 +36,9 @@ git log
 #!/bin/sh
 
 git filter-branch --env-filter '
-OLD_EMAIL="your-old-email@example.com"
-CORRECT_NAME="Your Correct Name"
-CORRECT_EMAIL="your-correct-email@example.com"
-if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
-then
-    export GIT_COMMITTER_NAME="$CORRECT_NAME"
-    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
-fi
-if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
-then
-    export GIT_AUTHOR_NAME="$CORRECT_NAME"
-    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
-fi
-' --tag-name-filter cat -- --branches --tags
-```  
-  
-- **Script com valores devidamente alterados**
-```sh
-#!/bin/sh
-
-git filter-branch --env-filter '
-OLD_EMAIL="paulod@gmail.com"
-CORRECT_NAME="paulodelia"
-CORRECT_EMAIL="paulohdelia@gmail.com"
+OLD_EMAIL="preencha-o-email-que-deseja-alterar-aqui@exemplo.com"
+CORRECT_NAME="coloque-seu-usuario-correto"
+CORRECT_EMAIL="coloque-seu-email-correto@exemplo.com"
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
 then
     export GIT_COMMITTER_NAME="$CORRECT_NAME"
@@ -75,8 +61,3 @@ git push --force --tags origin 'refs/heads/*'
 ```
   
 Ao entrar no github e olhar os commits você verá que foram alterados corretamente.
-
-- **Considerações finais**
-    1. O script altera somente os commits que possuem o email preenchido em OLD_EMAIL, portanto se seu repositório tiver commits de mais usuários estes não serão alterados
-    2. Você pode rodar o script quantas vezes quiser
-    3. Se está em um projeto com mais pessoas, avise-os de que este processo está sendo feito. Caso esqueçam de fazer um pull, e depois derem um merge, os commits poderão ser duplicados. Portanto, lembre-se de não dar um push se você não tem o seu repositório local atualizado
