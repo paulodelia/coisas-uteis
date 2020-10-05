@@ -32,8 +32,8 @@ Imagino que nessa altura você tem uma conta no Google e também possui uma past
 1. [Acesse o Google Apps Script](https://www.google.com/script/start/) e aperte no botão "Start Scripting"
 2. Crie um novo projeto (tem um botão enorme escrito "Novo Projeto")
 3. Dentro do projeto você pode dar uma nome pra ele (algo fácil por favor) - se quiser seguir que nem eu, você pode nomear para **remove-old-files**
-4. No [**codigo.gs**](/codigo.gs) (arquivo principal padrão) cole o script que deixei disponível
-5. Defina a pasta de backup e o limite de dias que vocÊ irá manter um arquivo
+4. No [**codigo.gs**](/excluir-arquivos-automaticamente-google-drive/codigo.gs) (arquivo principal padrão) cole o script que deixei disponível
+5. Defina a pasta de backup e o limite de dias que você quer manter um arquivo
 6. Crie o acionador para rodar o script toda semana
 
 ### Definir pasta de backup e limite de dias
